@@ -12,7 +12,8 @@ const Data = [
       title: "Sales Representative",
       name: "Guy Lastname PREC",
       company: "Glacier Realty Group",
-      phone: "604-123-456"
+      phone: "604-123-456",
+      email: "Guy@glacierRealty.com"
     },
     des:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -55,6 +56,7 @@ export default function App() {
           <MainContent
             realtorInfo={Data[0].realtorInfo}
             des={Data[0].des}
+            numOfComm={Data[0].recommendations.length}
             onClick={handleOpen}
           />
         }
